@@ -163,6 +163,7 @@ class AppPages {
 
 
 ### How I can run it?
+- :rocket: flutter version < 2.0 (1.x.x), not support null safety
 - :rocket: clone this repository
 - :rocket: run below code in terminal
 ```terminal
