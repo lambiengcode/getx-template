@@ -1,8 +1,7 @@
-import 'dart:io';
-
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_getx_template/src/pages/home/home_page.dart';
+import 'package:flutter_postman_application/src/pages/home/home_page.dart';
 
 class App extends StatefulWidget {
   @override
@@ -15,9 +14,9 @@ class _AppState extends State<App> with WidgetsBindingObserver {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarBrightness:
-          Platform.isAndroid ? Brightness.dark : Brightness.light,
+          GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
       statusBarIconBrightness:
-          Platform.isAndroid ? Brightness.dark : Brightness.light,
+          GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
     ));
     WidgetsBinding.instance.addObserver(this);
     SystemChrome.setPreferredOrientations([

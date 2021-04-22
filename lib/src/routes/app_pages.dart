@@ -1,4 +1,4 @@
-import 'package:flutter_getx_template/src/app.dart';
+import 'package:flutter_postman_application/src/app.dart';
 import 'package:get/get.dart';
 part 'app_routes.dart';
 

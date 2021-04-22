@@ -1,4 +1,4 @@
-package com.example.flutter_getx_template
+package com.example.flutter_postman_application
 
 import io.flutter.embedding.android.FlutterActivity
 

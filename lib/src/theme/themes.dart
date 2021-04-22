@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_template/src/public/styles.dart';
+import 'package:flutter_postman_application/src/public/styles.dart';
 
 class Themes {
   final lightTheme = ThemeData.light().copyWith(

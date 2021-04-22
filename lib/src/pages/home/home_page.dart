@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_template/src/public/constant.dart';
-import 'package:flutter_getx_template/src/theme/theme_service.dart';
+import 'package:flutter_postman_application/src/public/constant.dart';
+import 'package:flutter_postman_application/src/theme/theme_service.dart';
 
 class HomePage extends StatefulWidget {
   @override

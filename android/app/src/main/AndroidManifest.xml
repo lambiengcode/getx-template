@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_getx_template">
+    package="com.example.flutter_postman_application">
    <application
-        android:label="flutter_getx_template"
+        android:label="flutter_postman_application"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
