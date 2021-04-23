@@ -3,7 +3,7 @@
 ### Description:
 - This is source flutter template use getx for statemanagement ☕
 
-👀 Overview ******main.dart******, After you can customize languages package, themes, pages and routes
+👀 Overview ******main.dart******, After you can customize languages package, themes, pages and route
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_template/src/lang/translation_service.dart';
