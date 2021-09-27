@@ -1,6 +1,6 @@
 {
-    "name": "flutter_postman_application",
-    "short_name": "flutter_postman_application",
+    "name": "get_boilerplate",
+    "short_name": "get_boilerplate",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

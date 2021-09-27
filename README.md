@@ -3,14 +3,16 @@
 ### Description:
 - This is source flutter template use getx for statemanagement ☕
 
+<img src="https://raw.githubusercontent.com/jonataslaw/getx-community/master/get.png"/>
+
 👀 Overview ******main.dart******, After you can customize languages package, themes, pages and routes
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_postman_application/src/lang/translation_service.dart';
-import 'package:flutter_postman_application/src/routes/app_pages.dart';
-import 'package:flutter_postman_application/src/shared/logger/logger_utils.dart';
-import 'package:flutter_postman_application/src/theme/theme_service.dart';
-import 'package:flutter_postman_application/src/theme/themes.dart';
+import 'package:get_boilerplate/src/lang/translation_service.dart';
+import 'package:get_boilerplate/src/routes/app_pages.dart';
+import 'package:get_boilerplate/src/shared/logger/logger_utils.dart';
+import 'package:get_boilerplate/src/theme/theme_service.dart';
+import 'package:get_boilerplate/src/theme/themes.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -64,7 +66,7 @@ const Map<String, String> en_US = {
 - ******themes.dart******
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_postman_application/src/public/styles.dart';
+import 'package:get_boilerplate/src/public/styles.dart';
 
 class Themes {
   final lightTheme = ThemeData.light().copyWith(
@@ -143,7 +145,7 @@ abstract class Routes {
 #### 📂 Management pages
 - ******app_pages.dart******
 ```dart
-import 'package:flutter_postman_application/src/app.dart';
+import 'package:get_boilerplate/src/app.dart';
 import 'package:get/get.dart';
 part 'app_routes.dart';
 

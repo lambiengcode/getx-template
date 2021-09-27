@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_postman_application")
-set(APPLICATION_ID "com.example.flutter_postman_application")
+set(BINARY_NAME "get_boilerplate")
+set(APPLICATION_ID "com.example.get_boilerplate")
 
 cmake_policy(SET CMP0063 NEW)
 

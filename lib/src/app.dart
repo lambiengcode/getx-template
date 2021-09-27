@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_postman_application/src/pages/home/home_page.dart';
+import 'package:get_boilerplate/src/pages/home/home_page.dart';
 
 class App extends StatefulWidget {
   @override
