@@ -9,7 +9,7 @@ class AuthenticationRepository {
       "phone": username,
       "password": password,
     };
-    var response = await HandleApis().post(ApiGateway.LOGIN, body);
+    var response = await BaseRepository().post(ApiGateway.LOGIN, body);
     if (response.statusCode == 200) {
       return jsonDecode(response.body)["data"];
     }
@@ -27,7 +27,7 @@ class AuthenticationRepository {
       "fullName": fullName,
     };
 
-    var response = await HandleApis().post(ApiGateway.REGISTER, body);
+    var response = await BaseRepository().post(ApiGateway.REGISTER, body);
     if (response.statusCode == 200) {
       return Map<String, dynamic>.from(
         jsonDecode(response.body)["data"],
