@@ -13,12 +13,10 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   void initState() {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      statusBarBrightness:
-          GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
-      statusBarIconBrightness:
-          GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
+      statusBarBrightness: GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
+      statusBarIconBrightness: GetPlatform.isAndroid ? Brightness.dark : Brightness.light,
     ));
-    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance!.addObserver(this);
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,

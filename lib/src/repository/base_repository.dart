@@ -6,12 +6,11 @@ const root_url = "domain_api.com";
 const socket_url = "domain_api.com";
 
 class BaseRepository {
-  get(String name, [String params]) async {
+  get(String name, [String? params]) async {
     Map<String, String> paramsObject = {};
     if (params != null)
       params.split('&').forEach((element) {
-        paramsObject[element.split('=')[0].toString()] =
-            element.split('=')[1].toString();
+        paramsObject[element.split('=')[0].toString()] = element.split('=')[1].toString();
       });
     http.Response response = await http.get(
       params == null
@@ -38,7 +37,7 @@ class BaseRepository {
     );
   }
 
-  delete(String name, {Map<String, dynamic> body}) async {
+  delete(String name, {Map<String, dynamic>? body}) async {
     return await http.delete(
       Uri.http(root_url, '/' + name),
       headers: getHeader(),

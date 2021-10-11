@@ -4,7 +4,7 @@ import 'package:get_boilerplate/src/repository/base_repository.dart';
 import 'package:get_boilerplate/src/repository/remote/api_gateway.dart';
 
 class AuthenticationRepository {
-  Future<Map<String, dynamic>> login(String username, String password) async {
+  Future<Map<String, dynamic>?> login(String username, String password) async {
     var body = {
       "phone": username,
       "password": password,
@@ -16,7 +16,7 @@ class AuthenticationRepository {
     return null;
   }
 
-  Future<Map<String, dynamic>> register(
+  Future<Map<String, dynamic>?> register(
     String username,
     String password,
     String fullName,
