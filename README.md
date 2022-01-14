@@ -1,11 +1,13 @@
-## Flutter Getx Template
+# Flutter Getx Template
 
-### Description:
+## Description
+
 - This is source flutter template use getx for statemanagement ☕
 
-<img src="https://raw.githubusercontent.com/jonataslaw/getx-community/master/get.png"/>
+![Get X Logo]( https://raw.githubusercontent.com/jonataslaw/getx-community/master/get.png)
 
 👀 Overview ******main.dart******, After you can customize languages package, themes, pages and routes
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:get_boilerplate/src/lang/translation_service.dart';
@@ -34,8 +36,10 @@ void main() async {
 }
 ```
 
-#### 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Customize languages package
+### 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Customize languages package
+
 - ******translation_service.dart******
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -53,7 +57,9 @@ class TranslationService extends Translations {
       };
 }
 ```
+
 - ******en_US.dart******
+
 ```dart
 const Map<String, String> en_US = {
   'helloWord': 'Hello World',
@@ -63,7 +69,9 @@ const Map<String, String> en_US = {
 - 🔥 similar to other language files
 
 #### 🌓 Customize theme package
+
 - ******themes.dart******
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:get_boilerplate/src/public/styles.dart';
@@ -91,7 +99,9 @@ class Themes {
 ```
 
 #### 🌞 save theme mode in device storage
+
 - ******theme_service.dart******
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
@@ -122,7 +132,9 @@ class ThemeService {
 ```
 
 #### </> Log error for dev
+
 - ******logger_utils.dart******
+
 ```dart
 class Logger {
   static void write(String text, {bool isError = false}) {
@@ -132,7 +144,9 @@ class Logger {
 ```
 
 #### 🔗 Management routes
+
 - ******app_routes.dart******
+
 ```dart
 part of 'app_pages.dart';
 
@@ -143,7 +157,9 @@ abstract class Routes {
 ```
 
 #### 📂 Management pages
+
 - ******app_pages.dart******
+
 ```dart
 import 'package:get_boilerplate/src/app.dart';
 import 'package:get/get.dart';
@@ -163,23 +179,25 @@ class AppPages {
 }
 ```
 
-
 ### How I can run it?
-- :rocket: flutter version < 2.0 (1.x.x), not support null safety
+
+- :rocket: flutter version >= 2.12 support null safety
 - :rocket: clone this repository
 - :rocket: run below code in terminal
+
 ```terminal
 flutter pub get
 flutter run
 ```
 
-### Lib use in project:
+### Lib use in project
+
 ```dart
-get_test: ^3.13.3
-get_storage: ^1.4.0
+get_storage: ^2.0.3
 ```
 
-### Author:
+### Author
+
 ```dart
 lambiengcode
 ```
